@@ -1,0 +1,128 @@
+/* Define styles for the navbar */
+
+.background {
+  
+  background-size: cover;
+  background-color: #f1f1f1;
+  height: 100%;
+  width: 100%;
+  left:0%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  position: fixed;
+  background-color: rgb(51, 51, 51);
+  font-size: 16px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; 
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0 200px;
+}
+
+nav a:hover {
+  color: white;
+  background-color: gray;
+}
+
+body {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 0.5em;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 0.5em;
+  width: 20%;
+}
+
+button[type="submit"]:hover {
+  background-color: #444;
+}
+
+.results-container {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.results-container h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.results-container p {
+  margin: 10px 0;
+}
+
+footer {
+  position: fixed; /* Fix the footer at the bottom of the page */
+  bottom: 0; /* Position the footer at the bottom of the page */
+  left: 0; /* Position the footer at the left of the page */
+  width: 100%; /* Make the footer take up the full width of the page */
+  height: 50px; /* Adjust the height of the footer */
+  background-color: rgb(51, 51, 51);
+  color: white;
+  padding: 20px;
+  /* Add margin: 0 auto to center the footer horizontally */
+  margin: 0 auto;
+}
+
+.footer-container {
+  max-width: 1170px; /* Add a max-width to limit the size of the footer */
+  margin: 0 auto;
+}
+

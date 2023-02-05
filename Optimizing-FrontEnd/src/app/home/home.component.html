@@ -1,0 +1,87 @@
+
+<nav>
+  <a href="/home">Home</a> |
+  <a href="/about">About</a> |
+  <a href="/contact">Contact</a>
+</nav>
+<div class="background">
+<div style="display: flex; flex-direction: row;">
+  <!-- Left side content -->
+  <div style="width: 50%;">
+    <div class="container">
+      <h1>Connect to Database</h1>
+      <form (submit)="connect()">
+        <div class="form-group">
+          <label for="dbname">Database Name</label>
+          <input type="text" class="form-control" id="dbname" [(ngModel)]="dbname" name="dbname">
+        </div>
+        <div class="form-group">
+          <label for="user">Username</label>
+          <input type="text" class="form-control" id="user" [(ngModel)]="user" name="user">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" [(ngModel)]="password" name="password">
+        </div>
+        <div class="form-group">
+          <label for="host">Host</label>
+          <input type="text" class="form-control" id="host" [(ngModel)]="host" name="host">
+        </div>
+        <button type="submit" class="btn btn-primary">Connect</button>
+      </form>
+
+      <h1>Optimize Query</h1>
+      <form (submit)="optimize()">
+        <div class="form-group">
+          <label for="unoptimized_query">Unoptimized Query</label>
+          <textarea id=textarea0 class="form-control" id="unoptimized_query" [(ngModel)]="unoptimizedQuery" name="unoptimized_query" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Optimize</button>
+      </form>
+    </div>
+  </div>
+  <!-- Right side content -->
+ 
+  <div style="width: 50%;">
+    <div class="container" style="display: flex; flex-direction: column;">
+      <h1>optimization result</h1>
+      <textarea id="textarea1" rows="8" cols="80">
+        Optimized Query: {{optimized_query}}
+        Optimized Time: {{optimized_time}}
+        Unoptimized Query: {{unoptimized_query}}
+        Unoptimized Time: {{unoptimized_time}}
+        
+      </textarea>
+    
+<!--       
+      <div>
+        <p>Optimized Query</p>
+        <p>{{optimized_query}}</p>
+      </div>
+      <div>
+        <p>Optimized Time</p>
+        <p>{{optimized_time}}</p>
+      </div>
+      <div>
+        <p>Unoptimized Query</p>
+        <p>{{unoptimized_query}}</p>
+      </div>
+      <div>
+        <p>Unoptimized Time</p>
+        <p>{{unoptimized_time}}</p>
+      </div>   -->
+        
+  </div>
+  
+</div>
+
+</div>
+<footer>
+  <div class="footer-container">
+    <p>Copyright 2021 SQL OPTIMIZER</p>
+    <p>Contact: <a href="mailto:you@example.com">mdelhaous@gmail.com</a></p>
+  </div>
+</footer>
+
+
+
